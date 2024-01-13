@@ -8,6 +8,7 @@ import { InspiringStudent } from "./pages/InspiringStudents/InspiringStudent";
 import { InspiringSchool } from "./pages/InspiringSchools";
 import { AskUs } from "./pages/AskUs";
 import { ContactUs } from "./pages/ContactUs";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="ask-us" element={<AskUs />} />
           <Route path="contact-us" element={<ContactUs />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );
