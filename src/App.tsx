@@ -9,6 +9,7 @@ import { InspiringSchool } from "./pages/InspiringSchools";
 import { AskUs } from "./pages/AskUs";
 import { ContactUs } from "./pages/ContactUs";
 import { Footer } from "./components/Footer";
+import { Copyright } from "./components/Copyright";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="contact-us" element={<ContactUs />} />
         </Routes>
         <Footer />
+        <Copyright />
       </Router>
     </>
   );

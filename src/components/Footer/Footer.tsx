@@ -1,84 +1,64 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+  faTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-white border-t border-gray-200 dark:bg-gray-900 mt-auto">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto p-4">
-        {/* First Part - Three Links */}
-        <div className="flex flex-col space-y-2">
-          <Link to="/link1" className="text-white hover:text-blue-700">
-            Home
-          </Link>
-          <Link to="/link2" className="text-white hover:text-blue-700">
-            About
-          </Link>
-          <Link to="/link3" className="text-white hover:text-blue-700">
-            Ask Us
-          </Link>
+    <footer className="bg-stone-700 text-white p-8">
+      <div className="flex justify-between max-w-screen-xl mx-auto space-x-10">
+        {/* Company Section */}
+        <div>
+          <h3 className="font-bold mb-4">Company</h3>
+          <ul className="list-none p-0">
+            <li>Home</li>
+            <li>About</li>
+            <li>Inspiring Students</li>
+            <li>The Academics</li>
+          </ul>
         </div>
 
-        {/* Second Part - Three More Links */}
-        <div className="flex flex-col space-y-2">
-          <Link to="/link4" className="text-white hover:text-blue-700">
-            Inspiring Students
-          </Link>
-          <Link to="/link5" className="text-white hover:text-blue-700">
-            Inspiring Schools
-          </Link>
-          <Link to="/link6" className="text-white hover:text-blue-700">
-            Contact
-          </Link>
+        {/* Resources Section */}
+        <div>
+          <h3 className="font-bold mb-4">Resources</h3>
+          <ul className="list-none p-0">
+            <li>Privacy Policy</li>
+            <li>Terms and Conditions</li>
+            <li>Blog</li>
+            <li>Contact Us</li>
+          </ul>
         </div>
 
-        <div className="flex flex-col space-y-2">
-          <Link to="/link1" className="text-white hover:text-blue-700">
-            Advertise With Us
-          </Link>
-          <Link to="/link2" className="text-white hover:text-blue-700">
-            Partner With Us
-          </Link>
-          <Link to="/link3" className="text-white hover:text-blue-700">
-            Work With Us
-          </Link>
-        </div>
-
-        <div className="flex flex-col space-y-2">
-          <Link to="/link1" className="text-white hover:text-blue-700">
-            Privacy Policy
-          </Link>
-          <Link to="/link2" className="text-white hover:text-blue-700">
-            Terms Of Use
-          </Link>
-          <Link to="/link3" className="text-white hover:text-blue-700">
-            Cookies Policy
-          </Link>
-        </div>
-
-        {/* Third Part - Social Handles */}
-        <div className="flex flex-col space-y-2">
-          <span className="text-white">Follow Us</span>
-          <div className="flex space-x-4">
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-twitter text-white hover:text-blue-700"></i>
+        {/* Follow Us Section */}
+        <div className="mb-8 lg:mb-0">
+          <h3 className="font-bold mb-4">Follow Us</h3>
+          <div className="flex gap-4 flex-wrap lg:flex-nowrap">
+            <a href="#" className="text-blue-500 hover:text-blue-700 text-xl">
+              <FontAwesomeIcon icon={faFacebook} size="2x" />
             </a>
             <a
-              href="https://facebook.com/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#"
+              className="text-purple-500 hover:text-purple-700 text-xl"
             >
-              <i className="fab fa-facebook text-white hover:text-blue-700"></i>
+              <FontAwesomeIcon icon={faInstagram} size="2x" />
             </a>
             <a
-              href="https://instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#"
+              className="text-indigo-500 hover:text-indigo-700 text-xl"
             >
-              <i className="fab fa-instagram text-white hover:text-blue-700"></i>
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </a>
+            <a href="#" className="text-blue-400 hover:text-blue-600 text-xl">
+              <FontAwesomeIcon icon={faTwitter} size="2x" />
+            </a>
+            <a href="#" className="text-red-500 hover:text-red-700 text-xl">
+              <FontAwesomeIcon icon={faYoutube} size="2x" />
             </a>
           </div>
         </div>
