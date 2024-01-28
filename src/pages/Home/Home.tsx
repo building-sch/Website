@@ -8,6 +8,14 @@ export const Home: React.FC = () => {
     "https://www.dpsjhakri.com/images/dps_logo1.png",
     "https://placekitten.com/301/200",
   ];
+
+  const slideTitles = ["Slide 1 Title", "Slide 2 Title", "Slide 3 Title"];
+  const slideDescriptions = [
+    "Description for Slide 1 goes here.",
+    "Description for Slide 2 goes here.",
+    "Description for Slide 3 goes here.",
+  ];
+
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -37,6 +45,13 @@ export const Home: React.FC = () => {
           alt={`Banner Image ${currentImage + 1}`}
           className="w-full h-96 lg:h-128 object-cover"
         />
+
+        {/* Text Overlay */}
+        <div className="absolute inset-0 flex flex-col items-start justify-end text-black p-4 pl-8">
+          <h1 className="text-2xl font-bold mb-2">{slideTitles[currentImage]}</h1>
+          <p className="text-sm font-bold mb-2">{truncateText(slideDescriptions[currentImage], 150)}</p>
+        </div>
+
 
         {/* Previous Button */}
         <button
