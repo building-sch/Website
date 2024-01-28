@@ -95,9 +95,11 @@ export const Navbar: React.FC = () => {
               >
                 The Academics
               </NavLink>
-              <button className="bg-black text-white px-4 py-2 rounded-full border border-white">
-                Contact Us
-              </button>
+              <NavLink to="/contact-us">
+                <button className="bg-black text-white px-4 py-2 rounded-full border border-white">
+                  Contact Us
+                </button>
+              </NavLink>
             </div>
           </div>
         )}
@@ -118,9 +120,11 @@ export const Navbar: React.FC = () => {
               The Academics
             </NavLink>
           </div>
-          <button className="bg-black text-white px-4 py-2 rounded-full border border-white">
-            Contact Us
-          </button>
+          <NavLink to="/contact-us" >
+            <button className="bg-black text-white px-4 py-2 rounded-full border border-white">
+              Contact Us
+            </button>
+          </NavLink>  
         </div>
       </div>
     </nav>
