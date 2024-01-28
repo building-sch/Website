@@ -84,7 +84,7 @@ export const Home: React.FC = () => {
               className="w-full h-32 object-cover object-top mb-2 rounded-md"
             />
             <h3 className="text-lg font-bold mb-2">
-              The Importance Of Education
+              The Importance Of Education 1
             </h3>
             <p className="text-sm text-gray-600">
               {truncateText(
@@ -102,7 +102,7 @@ export const Home: React.FC = () => {
               className="w-full h-32 object-cover mb-2 rounded-md"
             />
             <h3 className="text-lg font-bold mb-2">
-              The Importance Of Education
+              The Importance Of Education 2
             </h3>
             <p className="text-sm text-gray-600">
               {truncateText(
@@ -120,7 +120,7 @@ export const Home: React.FC = () => {
               className="w-full h-32 object-cover mb-2 rounded-md"
             />
             <h3 className="text-lg font-bold mb-2">
-              The Importance Of Education
+              The Importance Of Education 3
             </h3>
             <p className="text-sm text-gray-600">
               {truncateText(
@@ -138,7 +138,7 @@ export const Home: React.FC = () => {
               className="w-full h-32 object-cover mb-2 rounded-md"
             />
             <h3 className="text-lg font-bold mb-2">
-              The Importance Of Education
+              The Importance Of Education 4
             </h3>
             <p className="text-sm text-gray-600">
               {truncateText(
@@ -217,7 +217,7 @@ export const Home: React.FC = () => {
           <div className="bg-white p-3 rounded-md shadow-md flex lg:h-44 md:h-80 sm:h-64">
             <div className="flex-1 ml-4 w-2/3">
               <h3 className="text-lg font-bold mb-2">
-                Left Side Text Header 1
+                Left Side Text Header 2
               </h3>
               <p className="text-sm text-gray-600">
                 Small writeup for Box 1. Lorem Ipsum is simply dummy text of the
@@ -237,7 +237,7 @@ export const Home: React.FC = () => {
           <div className="bg-white p-3 rounded-md shadow-md flex lg:h-44 md:h-80 sm:h-64">
             <div className="flex-1 ml-4 w-2/3">
               <h3 className="text-lg font-bold mb-2">
-                Left Side Text Header 1
+                Left Side Text Header 3
               </h3>
               <p className="text-sm text-gray-600">
                 Small writeup for Box 1. Lorem Ipsum is simply dummy text of the
@@ -257,7 +257,7 @@ export const Home: React.FC = () => {
           <div className="bg-white p-3 rounded-md shadow-md flex lg:h-44 md:h-80 sm:h-64">
             <div className="flex-1 ml-4 w-2/3">
               <h3 className="text-lg font-bold mb-2">
-                Left Side Text Header 1
+                Left Side Text Header 4
               </h3>
               <p className="text-sm text-gray-600">
                 Small writeup for Box 1. Lorem Ipsum is simply dummy text of the

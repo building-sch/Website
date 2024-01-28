@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -10,6 +10,11 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 export const Footer: React.FC = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
   return (
     <footer className="bg-stone-700 text-white p-8">
       <div className="flex justify-between max-w-screen-xl mx-auto space-x-10">
@@ -17,10 +22,18 @@ export const Footer: React.FC = () => {
         <div>
           <h3 className="font-bold mb-4">Company</h3>
           <ul className="list-none p-0">
-            <li>Home</li>
-            <li>About</li>
-            <li>Inspiring Students</li>
-            <li>The Academics</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/inspiring-students">Inspiring Students</Link>
+            </li>
+            <li>
+              <Link to="/inspiring-schools">The Academics</Link>
+            </li>
           </ul>
         </div>
 
@@ -28,10 +41,18 @@ export const Footer: React.FC = () => {
         <div>
           <h3 className="font-bold mb-4">Resources</h3>
           <ul className="list-none p-0">
-            <li>Privacy Policy</li>
-            <li>Terms and Conditions</li>
-            <li>Blog</li>
-            <li>Contact Us</li>
+            <li>
+              <Link to="/privacy-policy">Privacy Policy</Link>
+            </li>
+            <li>
+              <Link to="/terms-and-conditions">Terms and Conditions</Link>
+            </li>
+            <li>
+              <Link to="/blog">Blog</Link>
+            </li>
+            <li>
+              <Link to="/contact-us">Contact Us</Link>
+            </li>
           </ul>
         </div>
 
